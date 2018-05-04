@@ -10,8 +10,19 @@
 
     <!-- HEADER -->
     <header>
-      <img class="logo" src="images/logo.svg" alt="link to home page" height="40px;">
       <h1>Community Science Museum</h1>
+      <nav class="navbar" id="myTopnav">
+           <ul>
+               <li> <a class="nav-item" title="ABOUT US" href="about.html" >ABOUT US</a><li>
+               <li> <a class="nav-item" title="EXHIBITIONS" href="exhibitions.html" >EXHIBITIONSS</a><li>
+               <li> <a class="nav-item" title="NEWS/EVENTS" href="news.html" >NEWS/EVENTST</a><li>
+               <li> <a class="nav-item" title="VISIT US" href="visit.html" >VISIT US</a><li>
+               <li> <a class="nav-item" title="GET INVOLVED" href="get-involved.html" >GET INVOLVED</a><li>
+               <li> <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
+           </ul>
+
+       </nav>
+
     </header>
 
     <!-- TOP BANNER -->
@@ -46,14 +57,18 @@
     </section>
 
     <!-- NEWS AND EVENTS -->
+
   <section class="news-events">
+    <div class="exhibition-txt">
+      <h1 class="underline">News and events</h1>
+    </div>
 
     <section class="container">
-      <div class="container-img" style="background-image: url(images/wind-park-small.jpg); min-height: 20em;">
+      <div class="container-img" style="background-image: url(images/prof-sheila-widnall.jpg); min-height: 20em;">
 
       </div>
       <div class="container-txt">
-        <h2>Energetica Exhibition on Loan</h2>
+        <h2>Visiting Professor of Aeronautics</h2>
         <h3>June 26th 2018</h3>
         <p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology </p>
         <a class="btn "href="#">Read more about it</a>
@@ -61,13 +76,13 @@
     </section>
 
     <section class="container two">
-      <div class="container-img two" style="background-image: url(images/wind-park-small.jpg); min-height: 20em;">
+      <div class="container-img two" style="background-image: url(images/night-at-the-museum-small.jpg); min-height: 20em;">
 
       </div>
       <div class="container-txt two">
-        <h2>Energetica Exhibition on Loan</h2>
-        <h3>June 26th 2018</h3>
-        <p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology </p>
+        <h2>Night in the Museum</h2>
+        <h3>June 11th 2018</h3>
+        <p>Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays.</p>
         <a class="btn "href="#">Read more about it</a>
       </div>
     </section>
@@ -78,63 +93,12 @@
       </div>
       <div class="container-txt">
         <h2>Energetica Exhibition on Loan</h2>
-        <h3>June 26th 2018</h3>
-        <p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology </p>
+        <h3>July 2nd 2018</h3>
+        <p>On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the Community Science Museum</p>
         <a class="btn "href="#">Read more about it</a>
       </div>
     </section>
   </section>
-    <!-- NEWS AND EVENTS -->
-
-    <section class="news clearfix">
-      <div class="exhibition-txt">
-        <h1 class="underline">News and events</h1>
-      </div>
-      <div class="flex-container">
-        <div class="Flex-test-img">
-          <img src="images/prof-sheila-widnall.jpg" alt="Visit form professor Sheila Widnall from from the Massachusetts Institute of Technology " width="100%" height="auto">
-        </div>
-        <div class="flex-txt test">
-        <h2>Visiting Professor of Aeronautics</h2>
-        <h3>June 2nd 2018</h3>
-        <p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology </p>
-        <a class="btn "href="#">Read more about it</a>
-        </div>
-      </div>
-      <article class="article one">
-        <div class="article-img">
-          <img src="images/prof-sheila-widnall.jpg" alt="Visit form professor Sheila Widnall from from the Massachusetts Institute of Technology " width="100%" height="auto">
-        </div>
-        <div class="article-txt">
-        <h2>Visiting Professor of Aeronautics</h2>
-        <h3>June 2nd 2018</h3>
-        <p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology </p>
-        <a class="btn "href="#">Read more about it</a>
-        </div>
-      </article>
-      <article class="article two">
-        <div class="article-img">
-          <img src="images/night-at-the-museum-small.jpg" alt="Explore the museum by night " width="100%" height="auto">
-        </div>
-        <div class="article-txt">
-        <h2>Night in the Museum</h2>
-        <h3>June 11th 2018</h3>
-        <p>Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays.</p>
-        <a class="btn "href="#">Read more about it</a>
-      </div>
-      <article class="article three">
-        <div class="article-img">
-            <img src="images/wind-park-small.jpg" alt="Renewable energy from Wind-parks" width="100%" height="auto">
-        </div>
-        <div class="article-txt">
-        <h2>Energetica Exhibition on Loan</h2>
-        <h3>June 26th 2018</h3>
-        <p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology </p>
-        <a class="btn "href="#">Read more about it</a>
-        <a class="btn border "href="#">See all our News and events</a>
-      </div>
-      </article>
-    </section>
 
     <!-- SUBSCRIBE-FORM -->
     <section id="subscribe-form" class="subscribe">
@@ -146,15 +110,14 @@
     </section>
 
     <!-- FOOTER -->
-    <section class="footer">
+    <section class="footer clearfix">
       <section class="center-logo">
         <img src="images/center-logo.svg" alt="Community science museum" width="100%;">
-
       </section>
       <section class=" address wrap">
         <h2>Address:</h2>
         <p>Liarvegen 1 <br>4265 Håvik</p>
-        <div class="button">
+        <div class="map button">
           <a class="map" href="#" title="Link to map location"></a>
           <p>Map</p>
         </div>
@@ -173,13 +136,14 @@
       </section>
       <hr>
       <section class="social-media-btns wrap">
-        <div class="facebook icon ">
+        <h2>Follow us on social-media</h2>
+        <div class="facebook icon button">
         </div>
-        <div class="instagram icon ">
+        <div class="instagram icon button">
         </div>
-        <div class="twitter icon ">
+        <div class="twitter icon button">
         </div>
-        <div class="linkedin icon ">
+        <div class="linkedin icon button">
         </div>
       </section>
 
@@ -191,13 +155,7 @@
         <img class="icon" src="images/icons/social-media/linked-small.svg" alt="Follow us on Twitter">
       </section> -->
       <hr>
-     <section class="subscribe">
-      <form action="#" method="post">
-        <h2>Subscribe to our E-mail list</h2>
-        <input type="text" name="email" placeholder="Your E-mail">
-        <input id="submit" type="submit" name="Subscribe" value="Subscribe" >
-      </form>
-     </section>
+
     </section>
 
 

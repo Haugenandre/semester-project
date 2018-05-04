@@ -41,9 +41,9 @@ h4 {
 }
 p {
   font-family: 'Lato', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   color: #555;
-  font-size: 1em;
+  font-size: 1.2em;
   margin-top: 0em;
   line-height: 1.5em;
 }
@@ -52,11 +52,15 @@ hr {
   width: 50px;
 }
 a {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lato', sans-serif;
   font-weight: bold;
+  letter-spacing: 1px;
   font-size: 1em;
   text-decoration: none;
   color: #000;
+}
+a.target {
+  font-size: 1em
 }
 a:hover {
   color: #000;
@@ -72,8 +76,8 @@ a:active {
   float: left;
   height: auto;
   width: 100%;
-  padding: 1em 2em;
-  /* border-radius: 50px; */
+  padding: .7em 2em;
+  border-radius: 50px;
   background-color: #00f;
   color: #fff;
   text-align: center;
@@ -116,7 +120,7 @@ li {
 /* HEADER*/
 header {
   width: 100%;
-  height: 50px;
+  height: 60px;
   background-color: #fff;
   margin: 0;
   padding-top: 0;
@@ -128,7 +132,7 @@ header {
 .logo {
   display: inline-block;
   float: left;
-  padding: 5px 10px 0 10px;
+  padding: 10px 10px 0 15px;
 }
 
 header h1 {
@@ -136,7 +140,7 @@ header h1 {
   float: left;
   font-size: 1em;
   text-align: center;
-  padding: .8em;
+  padding: 1em .8em;
   margin: 0px;
 }
 
@@ -281,37 +285,12 @@ a.target.researchers {
 }
 
 
-
-
-
-
-
-
-
-
-
-.news {
-  display: block;
-  position: relative;
-  margin top: 50px;
-  padding: 3em 2.5em 0em 2.5em;
-}
-
-.article {
-  display: inline-block;
-  float: left;
-  margin-top: 2em;
-}
-.article-img {
-  /* margin-top: 2em; */
-}
-
 /* FOOTER */
 .footer {
   display: block;
   text-align: center;
   align-items: center;
-  background-color: #eee;
+  background-color: #fff;
   padding: 2.5em;
 }
 .wrap {
@@ -433,7 +412,10 @@ background: url(../images/icons/social-media/linked-small.svg) -80px 0;
   padding: 2em;
   border-top: 7px solid #FF6819;
   border-bottom: 7px solid #FF6819;
+}
+form h2 {
   color: #fff;
+  margin-top: 0;
 }
 
 input {
@@ -457,12 +439,13 @@ input#submit {
     background: #FF6819;
     color: #fff;
     /* border: 1px solid #00f; */
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lato', sans-serif;
     font-size: 1.1em;
     font-weight: 600;
     border: none;
     text-align: center;
     margin-top: 1em;
+    padding: 12px;
 }
 input:hover {
     background: #eee;
@@ -483,12 +466,66 @@ input#submit:active{
 
 
 @media screen and (min-width:700px) {
+
+
+/* TOP-BANNER */
+.topbanner{
+
+  height: 35em;
+  margin-top: 60px;
+
+}
+.banner-content {
+  display:block;
+  position: relative;
+  width: 100%;
+  min-height: 5em;
+  padding: 20em 5em 2em 5em;
+  margin: 60px 0 0 0;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+}
+.bannertext h1 {
+  font-size: 3em;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+
+/* EXPLORE */
+
+a.target {
+  min-height: 7em;
+  padding: .7em;
+}
+a.target {
+  font-size: 1.2em;
+  padding-top: 6em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 5em;
+}
+a.target.kids{
+  background-image: url(../images/icons/kids.svg);
+}
+a.target.teachers {
+  background-image: url(../images/icons/teachers.svg);
+}
+a.target.researchers {
+    background-image: url(../images/icons/researchers.svg);;
+}
+.explorers {
+  margin-bottom: 50px;
+}
+
+/* EXHIBITIONS */
+
 .exhibitions {
-  padding: 3em 7em;
+  padding: 3em 7em 5em 7em;
 }
 .exhibition-txt {
   width: 70%;
-  margin: 0 auto;
+  margin: 1em auto;
   text-align: center;
 }
 .underline::after{
@@ -504,7 +541,6 @@ input#submit:active{
   width: 33.3%;
 }
 
-/* NEWS AND EVENTS */
 
 /* NEWS AND EVENTS */
 .news-events {
@@ -549,31 +585,6 @@ input#submit:active{
 
 
 
-/* .container {
-  display: block;
-  width: 100%;
-  min-height: 40em;
-  border: 1px solid red;
-
-
-}
-.container-img {
-  display: inline-block;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: auto;
-}
-
-.container-txt {
-  display: inline-block;
-  padding: 2em;
-  width: 100%;
-  justify-content: center;
-} */
-
-
 
 
 
@@ -615,47 +626,64 @@ input#submit:active{
   float: left;
   padding: 2em;
 }
+
+/* SUBSCRIBE */
+#subscribe-form{
+  padding: 2em 15%;
+}
+form {
+  width: 100%;
+  text-align: center;
+}
+input {
+ height: auto;
+ width: 70%;
+ padding: 1em 2em;
+
+ font-size: 1em;
+
 }
 
-/* .exhibitions {
+input#submit {
+  width: 25%;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 12px 20px;
+  margin-top: 1em;
+}
+
+/* FOOTER */
+.footer {
+  height: auto;
+}
+hr {
+  display: none;
+}
+
+.center-logo {
+  padding: 0 40%;
+}
+
+.address {
+  width: 33.3%;
   display: inline-block;
   position: relative;
-}
-.exhibition-txt {
-  padding: 2.5em;
-}
-.ex-btn {
-  display: inline-block;
-  width: 90%;
   float: left;
-  min-height: 7em;
-  padding-top: 4.7em;
-  justify-content: center;
-  text-align: center;
-  border: 1px solid #000;
-  background-color: #fff;
-  margin-top: -5px;
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center 20px;
-
 }
-.ex-btn.cosmology {
-  background-image: url(../images/icons/cosmology.svg);
+.address p {
+  display: none;
 }
-.ex-btn.evolution {
-  background-image: url(../images/icons/evolution.svg);
+.contact {
+  width: 33.3%;
+  display: inline-block;
+  position: relative;
+  float: left;
+  /* text-align: left; */
 }
-.ex-btn.biology {
-  background-image: url(../images/icons/biology.svg);
+.social-media-btns {
+  width: 33.3%;
+  display: inline-block;
+  position: relative;
+  float: left;
+  /* text-align: left; */
 }
-.ex-btn.robot {
-  background-image: url(../images/icons/robot.svg);
-  background-size: 50px;
-}
-.ex-btn.ecology {
-  background-image: url(../images/icons/ecology.svg);
-}
-.ex-btn.young-stars {
-  background-image: url(../images/icons/cosmology.svg);
-} */
