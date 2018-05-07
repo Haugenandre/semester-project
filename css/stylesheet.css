@@ -140,7 +140,7 @@ header h1 {
 /* NAVIGATION */
 .navbar {
     width: 100%;
-    background-color: #fff;
+    background-color: #F0F1F3;
     padding-right: 100px;
     border bottom: 2px solid #333;
     overflow: hidden;
@@ -284,7 +284,7 @@ a.target.researchers {
 /* NEWS AND EVENTS */
 
 .news-events {
-  background-color: #eee;
+  background-color: #F0F1F3;
   min-height: 60em;
   padding: 1em;
 }
@@ -302,7 +302,7 @@ a.target.researchers {
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: auto;
+  min-height: 200em;
 }
 
 .container-txt {
@@ -320,6 +320,7 @@ a.target.researchers {
 /* FOOTER */
 .footer {
   display: block;
+  position: relative;
   text-align: center;
   align-items: center;
   background-color: #fff;
@@ -439,6 +440,8 @@ background: url(../images/icons/social-media/linked-small.svg) -80px 0;
 }
 
 #subscribe-form {
+  display: block;
+  position: relative;
   width: 100%;
   background-color: #00f;
   padding: 2em;
@@ -495,7 +498,7 @@ input#submit:active{
 
 
 /* EXIBITION PAGES */
-.navigation-btn {
+/* .navigation-btn {
   display: block;
   position: relative;
   width: 100%;
@@ -519,18 +522,27 @@ input#submit:active{
 }
 .activebtn:hover {
   background-image: url(../images/icons/activebtn-hover.svg);
+} */
+.container-content {
+    background-color: #F0F1F3;
 }
-.main {
+h1.exhibition-h1 {
+  color: #E6E6E8;
+  font-size: 3.5em;
+  text-align: center;
+  margin-bottom: 0;
+}
+.container.top  {
   display: block;
   width: 100%;
   height: auto;
-  margin-bottom: 2.5em;
+  margin-bottom: 0;
 }
-.main-content {
+.container-topcontent {
+  padding: 0 2.5em 2.5em 2.5em;
   display: block;
   width: 100%;
   height: auto;
-  background-color: #F0F1F3;
 }
 .top-img {
     background-size: cover;
@@ -539,16 +551,8 @@ input#submit:active{
     height: 400px;
     margin-top: 1em;
   }
-.top-img.cosmology {
-  background-image: url(../images/space-small.jpg);
-}
-.content {
-  width: 100%;
-  height: auto;
-}
-.content-txt{
-  padding:2.5em;
-}
+
+
 .squarebtn {
   display: inline-block;
   float: left;
@@ -584,7 +588,6 @@ input#submit:active{
 .squarebtn.back-to {
   background-color: #EFC05B;
   width: 100%;
-  margin: 0 0 2.5em 0;
   padding: 1.2em;
 }
 .squarebtn.back-to:hover {
@@ -594,7 +597,30 @@ input#submit:active{
 .squarebtn.back-to:active {
   background-color: #043EF6;
 }
-
+.all-exhibitions {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #F0F1F3;
+}
+.all-exhibitions-btn {
+  padding: 2.5em;
+}
+a.exhibition-btn {
+  display: block;
+  padding: 2.5em;
+  text-align: center;
+  border-top: 1px solid #0B0C0E;
+  background-color: #969DA5;
+}
+a.exhibition-btn:hover {
+  background-color: #4F5B75;
+}
+a.exhibition-btn:active {
+  background-color: #0B0C0E;
+  color: #fff;
+}
 
 
 /* MEDIA QUERIES */
@@ -755,14 +781,6 @@ a.target.researchers {
   padding: 4em;
 }
 
-
-
-
-
-
-
-
-
 .news {
  padding: 3em 7em;
 }
@@ -771,12 +789,7 @@ a.target.researchers {
   margin: 0 auto;
   text-align: center;
 }
-/* .article-txt {
-  width: 30%;
-}
-.article-img {
-  width: 30%;
-} */
+
 .article.one {
   width: 100%;
   display: block;
@@ -861,37 +874,60 @@ hr {
 
 
 /* EXHIBITIONS PAGES */
-.navigation-btn {
-  display: none;
+.container.top {
+  margin-top: 5em;
 }
-.main {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.main-content {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 5em 0 0 0;
-}
-.top-img {
-  display: inline-block;
-  float: left;
-  position: relative;
+.container-img.left {
+  display: flex;
+  flex-direction: column;
   width: 60%;
-  height: 710px;
-  margin-top: 0;
-  }
-.content {
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+.container-content{
   width: 40%;
   display: inline-block;
+  position: relative;
   float: left;
-  height: auto;
+  background-color: #F0F1F3;
 }
-.content-txt{
-  padding:2.5em;
+.container-topcontent {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  float: left;
+  padding: 3em;
+}
+.container-buttons{
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  float: left;
 }
 .squarebtn.back-to {
-  margin: 0;
+  margin-bottom: 0;
+}
+.all-exhibitions {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #969DA5;
+}
+.all-exhibitions-btn {
+  padding: 0;
+}
+a.exhibition-btn {
+  display: inline-block;
+  float: left;
+  width: 20%;
+  height: auto;
+  padding: 1em;
+  border-left: 1px solid #0B0C0E;
+  border-top: none;
+}
+.exhibition-btn.cosmology {
+  background-color: #0B0C0E;
+  color: #EFC05B;
 }
