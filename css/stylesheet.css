@@ -234,11 +234,7 @@ a.target.researchers {
 }
 
 /* EXHIBITIONS */
-.content {
-  padding: 3em 2.5em 0em 2.5em;
-  display: inline-block;
-  position: relative;
-}
+
 .exhibition-txt {
   /* margin-bottom: 3em; */
 }
@@ -499,29 +495,59 @@ input#submit:active{
 
 
 /* EXIBITION PAGES */
-.navigatioin-btn {
+.navigation-btn {
   display: block;
   position: relative;
   width: 100%;
+  height: 40px;
+  margin-top: 5em;
 
 }
 .activebtn {
   display: inline-block;
   position: relative;
+  float: left;
   width: 20%;
-  height: auto;
+  height: 50px;
   background-image: url(../images/icons/activebtn.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.top.cosmology {
-    background-image: url(../images/space-small.jpg);
+.activebtn.active {
+  background-image: url(../images/icons/activebtn-active.svg);
+}
+.activebtn:hover {
+  background-image: url(../images/icons/activebtn-hover.svg);
+}
+.main {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2.5em;
+}
+.main-content {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: #F0F1F3;
+}
+.top-img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 400px;
-    margin-top: 50px;
+    margin-top: 1em;
   }
+.top-img.cosmology {
+  background-image: url(../images/space-small.jpg);
+}
 .content {
-  background-color: #F0F1F3;
+  width: 100%;
+  height: auto;
+}
+.content-txt{
+  padding:2.5em;
 }
 .squarebtn {
   display: inline-block;
@@ -832,3 +858,40 @@ hr {
   position: relative;
   float: left;
 } */
+
+
+/* EXHIBITIONS PAGES */
+.navigation-btn {
+  display: none;
+}
+.main {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.main-content {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 5em 0 0 0;
+}
+.top-img {
+  display: inline-block;
+  float: left;
+  position: relative;
+  width: 60%;
+  height: 710px;
+  margin-top: 0;
+  }
+.content {
+  width: 40%;
+  display: inline-block;
+  float: left;
+  height: auto;
+}
+.content-txt{
+  padding:2.5em;
+}
+.squarebtn.back-to {
+  margin: 0;
+}
