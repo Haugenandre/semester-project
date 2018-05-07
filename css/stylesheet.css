@@ -84,7 +84,7 @@ a:active {
   float: left;
   height: auto;
   width: 100%;
-  padding: .7em 2em;
+  padding: 1em 2em;
   border-radius: 50px;
   background-color: #00f;
   color: #fff;
@@ -180,43 +180,7 @@ header h1 {
 .navbar ul li a:active {
 
     color: #EE8501;
-
-
  }
-
-
-
-/* .navbar {
-  width: 100%;
-  height: 5em;
-  background-color: #fff;
-  position: fixed;
-  top: 0;
-  z-index: 5;
-  padding: 1em 5em 1em 0;
-      overflow: hidden;
-}
-.navbar li {
-  display: block;
-  float: right;
-  list-style-type: none;
-}
-a.nav-item {
-  padding: 1.8em 1em 1.8em 1em;
-  font-weight: 500;
-  font-size: 1em;
-  margin: 0;
-}
-.navbar .icon {
-    display: none;
-}
-.navbar ul li a:hover {
-    background: #56F0D6;
-    border-bottom: 7px solid #043EF6;
- }
-.navbar ul li a:active {
-  color: #BAF781;
-} */
 
 
 /* TOP-BANNER */
@@ -257,20 +221,20 @@ a.target {
   color: #fff;
 }
 a.target.kids {
-  background-color: #FF6819;
+  background-color: #106EF5;
 }
 a.target.teachers {
-  background-color: #0000FF;
+  background-color: #56F0D6;
 }
 a.target.researchers {
-  background-color: #3FCC14;
+  background-color: #BAF781;
 }
 .explorers {
   margin-bottom: 50px;
 }
 
 /* EXHIBITIONS */
-.exhibitions {
+.content {
   padding: 3em 2.5em 0em 2.5em;
   display: inline-block;
   position: relative;
@@ -534,13 +498,86 @@ input#submit:active{
 }
 
 
+/* EXIBITION PAGES */
+.navigatioin-btn {
+  display: block;
+  position: relative;
+  width: 100%;
+
+}
+.activebtn {
+  display: inline-block;
+  position: relative;
+  width: 20%;
+  height: auto;
+  background-image: url(../images/icons/activebtn.svg);
+}
+.top.cosmology {
+    background-image: url(../images/space-small.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    margin-top: 50px;
+  }
+.content {
+  background-color: #F0F1F3;
+}
+.squarebtn {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  height: 4em;
+  padding: 2em;
+  background-color: #0B0C0E;
+  text-align: center;
+  }
+.squarebtn a {
+  width: 100%;
+  height: 100%;
+  padding: 1.3em;
+  justify-content: center;
+  }
+.squarebtn.right, .squarebtn.left {
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+.squarebtn.right {
+  background-image: url(../images/icons/arrow-right.svg);
+}
+.squarebtn.left {
+  background-image: url(../images/icons/arrow-left.svg);
+}
+.squarebtn:hover {
+  background-color: #56F0D6;
+}
+.squarebtn:active {
+  background-color: #043EF6;
+}
+.squarebtn.back-to {
+  background-color: #EFC05B;
+  width: 100%;
+  margin: 0 0 2.5em 0;
+  padding: 1.2em;
+}
+.squarebtn.back-to:hover {
+  background-color: #56F0D6;
+  text-decoration: underline;
+}
+.squarebtn.back-to:active {
+  background-color: #043EF6;
+}
+
+
+
 /* MEDIA QUERIES */
 /*NAVIGATION*/
 
 @media screen and (max-width:900px) {
     .icon {
         text-indent: 0;
-        width: 100px;
+        /* width: 100px; */
         height: auto;
     }
     .navbar {
@@ -789,10 +826,9 @@ hr {
   float: left;
   /* text-align: left; */
 }
-.social-media-btns {
+/* .social-media-btns {
   width: 33.3%;
   display: inline-block;
   position: relative;
   float: left;
-  /* text-align: left; */
-}
+} */
