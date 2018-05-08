@@ -123,9 +123,14 @@ a:active {
 
 
 .logo {
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: 3em;
   display: inline-block;
   float: left;
-  padding: 10px 10px 0 15px;
+  height: 5em;
+  width: 5em;
+  background-color: #0B0C0E;
 }
 
 header h1 {
@@ -498,31 +503,6 @@ input#submit:active{
 
 
 /* EXIBITION PAGES */
-/* .navigation-btn {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 40px;
-  margin-top: 5em;
-
-}
-.activebtn {
-  display: inline-block;
-  position: relative;
-  float: left;
-  width: 20%;
-  height: 50px;
-  background-image: url(../images/icons/activebtn.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.activebtn.active {
-  background-image: url(../images/icons/activebtn-active.svg);
-}
-.activebtn:hover {
-  background-image: url(../images/icons/activebtn-hover.svg);
-} */
 .container-content {
     background-color: #F0F1F3;
 }
@@ -535,11 +515,12 @@ h1.exhibition-h1 {
 .container.top  {
   display: block;
   width: 100%;
-  height: auto;
+  min-height: 600px;
   margin-bottom: 0;
+  margin-top: 5em;
 }
 .container-topcontent {
-  padding: 0 2.5em 2.5em 2.5em;
+  padding: 2.5em;
   display: block;
   width: 100%;
   height: auto;
@@ -548,15 +529,15 @@ h1.exhibition-h1 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 400px;
-    margin-top: 1em;
+    height: 700px;
+    margin-top: 5em;
   }
 
 
 .squarebtn {
   display: inline-block;
   float: left;
-  width: 50%;
+  width: 25%;
   height: 4em;
   padding: 2em;
   background-color: #0B0C0E;
@@ -587,8 +568,9 @@ h1.exhibition-h1 {
 }
 .squarebtn.back-to {
   background-color: #EFC05B;
-  width: 100%;
-  padding: 1.2em;
+  width: 50%;
+  padding: 1.3em;
+  text-decoration: underline;
 }
 .squarebtn.back-to:hover {
   background-color: #56F0D6;
@@ -620,6 +602,10 @@ a.exhibition-btn:hover {
 a.exhibition-btn:active {
   background-color: #0B0C0E;
   color: #fff;
+}
+.exhibition-btn.active {
+  background-color: #0B0C0E;
+  color: #EFC05B;
 }
 
 
@@ -663,7 +649,7 @@ a.exhibition-btn:active {
     }
 
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:769px) {
 
 
 /* TOP-BANNER */
@@ -738,6 +724,7 @@ a.target.researchers {
 .ex-btn {
   width: 33.3%;
 }
+
 
 
 /* NEWS AND EVENTS */
@@ -926,8 +913,4 @@ a.exhibition-btn {
   padding: 1em;
   border-left: 1px solid #0B0C0E;
   border-top: none;
-}
-.exhibition-btn.cosmology {
-  background-color: #0B0C0E;
-  color: #EFC05B;
 }
