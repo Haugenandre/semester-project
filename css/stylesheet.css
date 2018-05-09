@@ -9,6 +9,10 @@ font-family: 'Playfair Display', serif; */
 #106EF5 lighter blue
 #56F0D6 turkish
 #BAF781 light green
+
+#FF6819
+#FF4519
+#00f
 */
 
 /* GLOBAL STYLES */
@@ -68,6 +72,9 @@ a {
   text-decoration: none;
   color: #000;
 }
+.heading-txt {
+  padding-bottom: 2em;
+}
 a.target {
   font-size: 1em
 }
@@ -119,7 +126,6 @@ a:active {
   margin-bottom: 5px;
  }
 
-
 /* HEADER*/
 
 
@@ -131,7 +137,13 @@ a:active {
   float: left;
   height: 5em;
   width: 5em;
-  background-color: #0B0C0E;
+  background-color: #00F;
+}
+.logo-topp {
+  display: block;
+  width: 5em;
+  height: 5em;
+
 }
 
 header h1 {
@@ -227,13 +239,13 @@ a.target {
   color: #fff;
 }
 a.target.kids {
-  background-color: #106EF5;
+  background-color: #00f;
 }
 a.target.teachers {
-  background-color: #56F0D6;
+  background-color: #FF6819;
 }
 a.target.researchers {
-  background-color: #BAF781;
+  background-color: #3FCC14;
 }
 .explorers {
   margin-bottom: 50px;
@@ -292,7 +304,7 @@ a.target.researchers {
 .news-events {
   background-color: #F0F1F3;
   min-height: 60em;
-  padding: 1em;
+  padding: 7em 1em;
 }
 .container {
   display: block;
@@ -562,23 +574,25 @@ h1.exhibition-h1 {
   background-image: url(../images/icons/arrow-left.svg);
 }
 .squarebtn:hover {
-  background-color: #56F0D6;
+  background-color: #00f;
 }
 .squarebtn:active {
-  background-color: #043EF6;
+  background-color: #FF4519;
 }
 .squarebtn.back-to {
-  background-color: #EFC05B;
+  background-color: #FF6819;
   width: 50%;
   padding: 1.3em;
   text-decoration: underline;
 }
 .squarebtn.back-to:hover {
-  background-color: #56F0D6;
+  background-color: #00F;
+  color: #fff;
   text-decoration: underline;
 }
 .squarebtn.back-to:active {
-  background-color: #043EF6;
+  background-color: #FF4519;
+  color: #fff;
 }
 .all-exhibitions {
   display: block;
@@ -598,38 +612,20 @@ a.exhibition-btn {
   background-color: #969DA5;
 }
 a.exhibition-btn:hover {
-  background-color: #4F5B75;
+  background-color: #00f;
+  color: #fff;
 }
 a.exhibition-btn:active {
-  background-color: #0B0C0E;
+  background-color: #FF4519;
   color: #fff;
 }
 .exhibition-btn.active {
-  background-color: #0B0C0E;
-  color: #EFC05B;
+  background-color: #00f;
+  color: #fff;
 }
 
 /* ABOUT PAGE */
 
-/* breadcrumbs */
-.breadcrumbs {
-  margin-top: 7em;
-  display: block;
-  width: 100%;
-}
-
-.number, .rule, .site-title {
-  display: inline-block;
-  float: left;
-  text-align: center;
-  padding: .8em;
-}
-a.number {
-  background-color: #0B0C0E;
-  font-family: 'Playfair Display', serif;
-  font-size: .8em;
-  color: #fff;
-}
 
 .about-main {
   display: block;
@@ -658,6 +654,19 @@ a.number {
 .about-content{
   padding: 2.5em;
 }
+
+/* NEWSPAGE */
+a.filter-btn {
+  display: inline-block;
+  width: 10em;
+  font-size: .7em;
+  padding: 1em;
+  background-color: #00f;
+  color: #fff;
+  text-align: center;
+  border-radius: 50px;
+}
+
 
 
 /* MEDIA QUERIES */
@@ -704,6 +713,26 @@ a.number {
 
 @media screen and (min-width:769px) {
 
+  /* breadcrumbs */
+  .breadcrumbs {
+    background-color: #F0F1F3;
+    padding-top: 7em;
+    display: block;
+    width: 100%;
+  }
+
+  .number, .rule, .site-title {
+    display: inline-block;
+    float: left;
+    text-align: center;
+    padding: .8em;
+  }
+  a.number {
+    background-color: #0B0C0E;
+    font-family: 'Playfair Display', serif;
+    font-size: .8em;
+    color: #fff;
+  }
 
 /* TOP-BANNER */
 .topbanner{
@@ -782,7 +811,7 @@ a.target.researchers {
 
 /* NEWS AND EVENTS */
 .news-events {
-  padding: 2.5em;
+  padding: 7em 2.5em;
 }
 .container {
   display: flex;
