@@ -13,6 +13,7 @@ font-family: 'Playfair Display', serif; */
 #FF6819
 #FF4519
 #00f
+#3FCC14
 */
 
 /* GLOBAL STYLES */
@@ -632,7 +633,7 @@ a.exhibition-btn:active {
   width: 100%;
   height: auto;
   position: relative;
-  padding-top: 1em;
+  /* padding-top: 1em; */
 }
 .about-img-large {
   display: block;
@@ -760,7 +761,7 @@ a.filter-icon-btn {
 
   /* breadcrumbs */
   .breadcrumbs {
-    background-color: #F0F1F3;
+    background-color: #fff;
     padding-top: 7em;
     display: block;
     width: 100%;
@@ -777,6 +778,10 @@ a.filter-icon-btn {
     font-family: 'Playfair Display', serif;
     font-size: .8em;
     color: #fff;
+  }
+  a.number.black {
+    background-color: #fff;
+    color: #0B0C0E;
   }
 
 /* TOP-BANNER */
@@ -804,6 +809,11 @@ a.filter-icon-btn {
 
 
 /* EXPLORE */
+.explorers {
+  display: block;
+  position: relative;
+  height:
+}
 
 a.target {
   min-height: 7em;
@@ -855,6 +865,9 @@ a.target.researchers {
 
 
 /* NEWS AND EVENTS */
+.breadcrumbs.newspage {
+  background-color: #F0F1F3;
+}
 .filter-icon {
   display: inline-block;
 }
@@ -862,7 +875,7 @@ a.target.researchers {
   display: none;
 }
 .news-events {
-  padding: 7em 2.5em;
+  padding: 5em 2.5em;
 }
 .container {
   display: flex;
