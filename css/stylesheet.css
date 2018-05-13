@@ -204,11 +204,11 @@ header h1 {
 
 /* TOP-BANNER */
 .topbanner{
-  background-image: url(../images/science-museum-small.jpg);
+  background-image: url(../images/science-museum.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 400px;
+  height: 30em;
   margin-top: 50px;
 
 }
@@ -219,7 +219,7 @@ header h1 {
   min-height: 5em;
   justify-content: center;
   padding: 2em;
-  margin-top: 200px;
+  margin-top: 260px;
   margin-left: 10%;
   background-color: #fff;
 }
@@ -250,6 +250,9 @@ a.target.researchers {
 }
 .explorers {
   margin-bottom: 50px;
+}
+.heading-txt {
+  padding: 2.5em;
 }
 
 /* EXHIBITIONS */
@@ -351,7 +354,7 @@ a.target.researchers {
 .icon {
   display: inline-block;
   text-indent: -120px;
-  position: 0 0;
+  /* position: 0 0; */
   padding: .7em .7em 0em .7em;
   margin: 0 .5em;
 }
@@ -656,6 +659,48 @@ a.exhibition-btn:active {
   padding: 2.5em;
 }
 
+.image {
+  background-image: url(../images/astronaut-small.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 15em;
+
+}
+a.squarebtn.cosmology {
+  display: inline-block;
+  background-color: #00f;
+  width: 50%;
+  height: 3em;
+  padding: 1em;
+  color: #fff;
+  position: relative;
+  top: 12em;
+}
+.button.about {
+  width: 100%;
+}
+.email.about {
+  display: inline-block;
+  position: absolute;
+  float: left;
+}
+.phone.about {
+  display: inline-block;
+  position: relative;
+  float: left;
+}
+
+
+a.text-btn {
+  display: inline-block;
+  position: relative;
+  float: left;
+  height: 40px;
+  width: auto;
+  padding: .5em;
+  text-decoration: underline;
+}
+
 /* NEWSPAGE */
 a.filter-btn {
   display: inline-block;
@@ -715,6 +760,21 @@ a.filter-icon-btn {
   border-color: #FF6819;
 }
 
+/* VISIT US PAGES */
+h2.space {
+  margin-top: 2em;
+}
+.btn.buy-tickets {
+  background-color: #FF6819;
+  /* #FF4519 */
+}
+.btn.buy-tickets:hover {
+  background-color: #00f;
+  /* #FF4519 */
+}
+.btn.buy-tickets:active {
+  background-color: #FF4519;
+}
 /* MEDIA QUERIES */
 /*NAVIGATION*/
 
@@ -796,16 +856,18 @@ a.filter-icon-btn {
   position: relative;
   width: 100%;
   min-height: 5em;
-  padding: 20em 5em 2em 5em;
-  margin: 60px 0 0 0;
+  padding-top: 23em;
+  margin: 70px 0 0 0;
   text-align: center;
   background-color: rgba(255, 255, 255, 0);
 }
 .bannertext h1 {
-  font-size: 3em;
-  color: #fff;
-  text-shadow: 1px 1px 1px #000;
+  font-size: 2.5em;
+  padding: 1em;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.8);
 }
+.heading-txt {}
 
 
 /* EXPLORE */
@@ -840,6 +902,7 @@ a.target.researchers {
 }
 
 /* EXHIBITIONS */
+
 
 .exhibitions {
   padding: 3em 7em 5em 7em;
@@ -1031,7 +1094,7 @@ hr {
   display: inline-block;
   position: relative;
   float: left;
-  padding: 3em;
+  padding: 5em;
 }
 .container-buttons{
   width: 100%;
@@ -1103,7 +1166,43 @@ a.exhibition-btn {
   padding: 0 2.5em;
 
 }
+.about-exhibitions {
+  width: 100%;
+  display: inline-block;
+  float: right;
+  padding-bottom: 2em;
+}
+.image {
+  height: 30em;
+}
+a.squarebtn.cosmology {
+  Top: 27em;
+  }
+.join {
+      width: 100%;
+      height: auto;
+      padding-bottom: 2em;
+  }
+a.btn {
+  display: block;
+  width: 60%;
+  height: 4em;
+  padding: 1.3em;
+  margin-right: 20%;
+  margin-bottom: 2em;
+}
 
+.contact-us {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.contact-email {
+  display:inline-block;
+  width: 40px;
+}
+}
+.
 @media screen and (min-width:1100px) {
 
   /* ABOUT US */
@@ -1130,5 +1229,12 @@ a.exhibition-btn {
   width: 100%;
   display: inline-block;
   padding-right: 0;
+}
+.container-topcontent {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  float: left;
+  padding-top: 7em;
 }
 }
